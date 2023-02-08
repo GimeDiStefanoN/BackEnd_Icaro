@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Practica Clase 9 (q es la 8)</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <div class="arriba">
+        <header  id="comienzo" class="encabezado">
+            <div class="logo">
+                <h1>MyApp</h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">INICIO</a></li>
+                        <li><a href="./login.html">LOGIN</a></li>
+                        <li><a href="./registro.html">SIGN UP</a></li>
+                        <li><a href="./contacto.html">CONTACTO</a></li>
+                      </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main>
+        <div class="contenedorMainregister">
+            <form class="formregister" action="">
+                <!-- TITULO DEL FORM -->
+                <h2>REGISTRO</h2>
+                <!-- DATOS -->
+                <div class="datosregister">
+                    <div class="elemento">
+                        <label for="name">Nombre Completo</label>
+                        <div class="inputs">
+                            <i class="bi bi-person"></i>
+                            <input type="text" id="name" name="name" maxlength="20" required>
+                        </div>
+                    </div>
+    
+                    <div class="elemento">
+                        <label for="username">Nombre de Usuario</label>
+                        <div class="inputs">
+                            <i class="bi bi-person"></i>
+                            <input type="text" id="username" name="username" maxlength="10" required>
+                        </div>
+                    </div>
+    
+                    <div class="elemento">
+                        <label for="password">Contraseña</label>
+                        <div class="inputs">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+    
+                    <div class="elemento">
+                        <label for="password">Repetir Contraseña</label>
+                        <div class="inputs">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" id="password2" name="password2" required>
+                        </div>
+                    </div>
+    
+                    <div class="elemento">
+                        <label for="email">Correo Electrónico</label>
+                        <div class="inputs">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" id="email" name="email" required >
+                        </div>
+                    </div>
+    
+                    <div class="elemento">
+                        <label for="pais">Pais</label>
+                        <div class="inputs">
+                            <select name="pais" id="pais">
+                                <option selected value="">Seleccionar un pais</option>
+                                <option value="arg">Argentina</option>
+                                <option value="uy">Uruguay</option>
+                                <option value="uy">Paraguay</option>
+                                <option value="uy">Chile</option>
+                                <option value="uy">Bolivia</option>
+                                <option value="br">Brasil</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <fieldset>
+                        <legend>Genero</legend>
+                        <label>
+                            <input type="radio" name="genero" value="femenino"> Femenino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="otro"> Otro
+                        </label>
+                    </fieldset>
+    
+                    <div class="elemento">
+                        <label for="nacimiento">Fecha de Nacimiento</label>
+                        <div class="inputs">
+                            <input type="date" name="nacimiento" id="nacimiento" min="2004-12-31" required>
+                        </div>
+                    </div>
+    
+                    <div class="contenedorPhone">
+                        <div class="elementoPhone">
+                            <label for="phone">Número de Celular</label>
+                            <div class="inputs">
+                                <i class="bi bi-telephone"></i>
+                                <input type="tel" id="phone" name="phone" maxlength="10"  required >
+                            </div>
+                        </div>
+                        <small>Formato válido: 351 - 4545454</small>
+                    </div>
+                </div>
+                <!-- T&C -->
+                <div class="checks">                
+                    <div class="elemento">
+                        <input
+                            type="checkbox"
+                            id="aceptTerms"
+                            name="aceptTerms"
+                            value="aceptTerms" required/>
+    
+                        <label for="aceptTerms">Acepto los <a href="#" target="_blank">Términos y Condiciones</a></label>
+                    </div>
+                </div>
+                <!-- BOTONES -->
+                <div class="buttonsregister">
+                    <button class="resetear" type="reset" >Resetear</button>
+                    <button class="registrar" type="submit">Registrar</button>
+                </div>
+                <p class="textButton">Ya tengo Usuario <a href="./login.html">Ingresar</a> </p>
+            </form>
+        </div>     
+    </main>
+
+    <!-- CIERRE -->
+    <div class="final">
+        <footer id="datos" class="cierre">
+            <div>
+                <p class="copy">Diseñado y desarrollado por G.D.N.</p>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./contacto.html">Comunicate con nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
